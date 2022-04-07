@@ -1,5 +1,9 @@
 import React, { useContext } from "react";
 
+import {
+  WalletMultiButton,
+} from "@solana/wallet-adapter-react-ui";
+
 // style file
 import "./JoinTwirrer.scss";
 
@@ -45,7 +49,8 @@ const JoinTwirrer = () => {
             </p>
           </div>
           <div className="joinTwirrer__box__body__buttons">
-            <LoginButton />
+            {/* <LoginButton /> */}
+            <WalletMultiButton />
           </div>
         </div>
       </div>

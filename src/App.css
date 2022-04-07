@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.wallet-adapter-button{
+  margin: auto !important;
+}

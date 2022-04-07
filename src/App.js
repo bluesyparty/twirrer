@@ -16,16 +16,14 @@ import {
 } from "@solana/wallet-adapter-wallets";
 import {
   WalletModalProvider,
-  WalletDisconnectButton,
-  WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
 import Main from './Main';
 
-import "./App.css";
-
 // Default styles that can be overridden by your app
-require("@solana/wallet-adapter-react-ui/styles.css");
+import "@solana/wallet-adapter-react-ui/styles.css";
+
+import "./App.css";
 
 function App() {
   // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'.
@@ -54,8 +52,6 @@ function App() {
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
-          <WalletMultiButton />
-          <WalletDisconnectButton />
           <Main />
         </WalletModalProvider>
       </WalletProvider>
